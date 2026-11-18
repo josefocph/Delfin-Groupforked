@@ -123,10 +123,3 @@ public class Member {
                 membershipType, swimmerLevel, swimmerCategory);
     }
 }
-/*
- Responsibilities:
-- Hold identity and registration data (name, member number, date of birth).
-- Hold membership classifications (type, level, category).
-- Know its own age on a given date (Information Expert).
-- Know its own yearly fee (Information Expert) — uses the date parameter
-*/
