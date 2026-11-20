@@ -84,16 +84,6 @@ public class Member {
         return Period.between(dateOfBirth, date).getYears();
     }
 
-    /**
-     * Yearly membership fee in DKK on the given date.
-     * Date is a parameter (not LocalDate.now()) so tests are stable.
-     *
-     * Rules:
-     *  - Passive: 500 DKK.
-     *  - Active youth (<18): 1,000 DKK.
-     *  - Active senior (>=18): 1,600 DKK.
-     *  - Active senior over 60 (strictly >60): 1,600 * 0.75 = 1,200 DKK.
-     */
     public int calculateFee(LocalDate date) {
         if (membershipType == MembershipType.PASSIVE) {
             return PASSIVE_FEE_DKK;
